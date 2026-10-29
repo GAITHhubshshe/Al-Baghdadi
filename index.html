@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Baghdadi - منصة البغدادي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #161922;
+            --border-color: #262b36;
+            --text-main: #ffffff;
+            --text-muted: #9ba1a6;
+            --accent-color: #3b82f6;
+            --accent-hover: #2563eb;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 90px;
+        }
+        header {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--card-bg);
+        }
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+        .profile-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 auto 15px;
+            color: white;
+        }
+        .username {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .badge {
+            background-color: rgba(59, 130, 246, 0.15);
+            color: var(--accent-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .section-title {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin: 20px 0 10px;
+            text-align: right;
+        }
+        .card-list {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .card-item {
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .card-item:last-child {
+            border-bottom: none;
+        }
+        .card-item:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+        .card-item-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .card-item-info i {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+        .btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 600px;
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-around;
+            padding: 12px 0;
+        }
+        .nav-item {
+            color: var(--text-muted);
+            text-align: center;
+            text-decoration: none;
+            font-size: 0.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .nav-item i {
+            font-size: 1.2rem;
+        }
+        .nav-item.active {
+            color: var(--accent-color);
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            color: white;
+            border-radius: 8px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Al Baghdadi</div>
+        <div>
+            <a href="https://discord.gg/8wz7TMcTH" target="_blank" style="color: var(--accent-color); text-decoration: none; font-size: 0.9rem;"><i class="fa-brands fa-discord"></i> السيرفر</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="profile-card">
+            <div class="avatar">A</div>
+            <div class="username">Al Baghdadi</div>
+            <div class="badge"><i class="fa-solid fa-shield-halved"></i> المالك الأساسي</div>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">لوحة تحكم المنصة الرسمية.</p>
+        </div>
+
+        <div class="section-title">إدارة استضافة البوتات</div>
+        <div class="card-list" style="padding: 20px;">
+            <label style="font-size: 0.9rem; color: var(--text-muted);">توكن البوت (Bot Token):</label>
+            <input type="password" id="botToken" placeholder="أدخل توكن البوت هنا...">
+            <button class="btn" onclick="alert('تم حفظ توكن البوت بنجاح!')">ربط وتشغيل البوت</button>
+            <a href="https://discord.gg/8wz7TMcTH" target="_blank">
+                <button class="btn" style="background-color: #5865F2; margin-top: 10px;"><i class="fa-brands fa-discord"></i> دعوة البوت للسيرفر</button>
+            </a>
+        </div>
+
+        <div class="section-title">حسابي والنشاط</div>
+        <div class="card-list">
+            <div class="card-item" onclick="window.open('https://youtube.com/@ikyot?si=QWyzBNNTwT7CFDE-', '_blank')">
+                <div class="card-item-info">
+                    <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                    <span>قناة اليوتيوب الرسمية</span>
+                </div>
+                <i class="fa-solid fa-chevron-left" style="color: var(--text-muted);"></i>
+            </div>
+            <div class="card-item" onclick="window.open('https://discord.gg/8wz7TMcTH', '_blank')">
+                <div class="card-item-info">
+                    <i class="fa-brands fa-discord"></i>
+                    <span>مجتمع ديسكورد Al Baghdadi</span>
+                </div>
+                <i class="fa-solid fa-chevron-left" style="color: var(--text-muted);"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+        <a href="#" class="nav-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>الرئيسية</span>
+        </a>
+        <a href="https://youtube.com/@ikyot?si=QWyzBNNTwT7CFDE-" target="_blank" class="nav-item">
+            <i class="fa-solid fa-video"></i>
+            <span>اليوتيوب</span>
+        </a>
+        <a href="https://discord.gg/8wz7TMcTH" target="_blank" class="nav-item">
+            <i class="fa-brands fa-discord"></i>
+            <span>الديسكورد</span>
+        </a>
+    </div>
+
+</body>
+</html>
